@@ -1,0 +1,198 @@
+/* Normalize & Global Stiller */
+body, html {
+    font-family: Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 550;
+    background-color: rgb(8, 8, 8);
+    color: rgb(245, 245, 245);
+    margin: 0px;
+    padding: 0px;
+    border: unset;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: scroll;
+    accent-color: rgb(255, 0, 43);
+    display: grid;
+    place-items: middle;
+}
+
+/* Linkler için stiller. */
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(0, 195, 255);
+}
+
+a:hover{
+    text-decoration: underline solid white 2px;
+    color: rgb(255, 0, 43);
+    transition: 250ms all;
+}
+
+a:not(:hover) {
+    transition: 250ms all;
+}
+
+/* Sitede herhangi bir yeri seçince uygulanacak stiller. */
+
+::selection {
+    background-color: rgb(255, 0, 43);
+}
+
+/* (Konteynır) Genel sayfa düzeni. */
+
+.login-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Tüm inputlar için global stiller. */
+
+input {
+    font-size: larger;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    outline: none;
+    width: 529px;
+    height: 48px;
+    border: 0;
+    background-color: rgb(0, 195, 255);
+    border-left: 0px solid rgb(255, 0, 43);
+}
+
+input:focus {
+    transition: 350ms all;
+    border-left: 15px solid rgb(255, 0, 43);
+}
+input:not(:focus) {
+    transition: 350ms all;
+}
+
+/* E-Mail ve Password Konteynırları için sayfa düzeni. */
+
+.email-cont {
+    width: 581px;
+}
+
+.password-cont {
+    align-items: flex-end;
+    position: relative;
+    display: flex;
+    width: 581px;
+    height: 97px;
+    margin-top: 10px;
+}
+
+/* Bazı önemsiz stiller. */
+
+.forgot {
+    margin-bottom: 10px;
+}
+
+.up-holder {
+    border-bottom: 2px solid rgb(255, 0, 43);
+}
+
+.up-holder-2 {
+    position: absolute;
+    display: flex;
+    align-self: flex-start;
+    border-bottom: 2px solid rgb(0, 195, 255);
+}
+
+/* Göster-Gizle Butonu için stiller. */
+
+.showhide {
+    border: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    width: 48px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 43);
+}
+
+/* Login Butonu için stiller. */
+
+.login-button {
+    font-size: larger;
+    font-weight: 550;
+    outline: none;
+    background-color: rgb(255, 0, 43);
+    border: 0;
+    padding: 3px;
+    margin: 5px;
+    outline: none;
+    width: 372px;
+    height: 42px;
+    cursor: pointer;
+    border-left: 0px solid rgb(0, 195, 255);
+}
+
+.login-button:hover {
+    transition: 350ms all;
+    border-left: 15px solid rgb(0, 195, 255);
+}
+
+.login-button:not(:hover) {
+    transition: 350ms all;
+}
+
+/* Checkbox için stiller. */
+
+.checkbox {
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(255, 0, 43);
+}
+
+.checkbox:checked {
+    box-shadow: 5px 5px 50px rgb(255, 0, 43);
+    transition: 500ms all;
+}
+
+/* Sayfanın en altında bulunan underline için stiller. */
+
+.underline {
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1vh;
+    background: linear-gradient(to left, rgb(0, 195, 255), rgb(255, 0, 43));
+    
+}
+
+/* Login Butonundaki icon için düzen stilleri. */ 
+
+.unlock-icon {
+    margin-top: 2px;
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+}
+
+/* Son olarak Login span'ı için biraz stil. */
+
+.logtext {
+    border-left: 1px solid rgb(8, 8, 8);
+    padding-left: 10px;
+}
+
+
+/* Bu sayfa'daki her element Reend tarafından oluşturuldu.
+   Sayfadaki tüm iconlar "Bootstrap Icons" üzerinden elde edildi. (icons.getbootstrap.com)
+   Sayfanın kaynak koduna Github üzerinden erişebilirsiniz.
+*/
